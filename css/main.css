@@ -8,12 +8,11 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: wrap;
 }
 
 .container{
 	max-width: 1200px;
-	margin: 0 auto;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -28,26 +27,29 @@ h3 {
 	font-weight: 700;
 }
 h1 {
-	font-size: 2em;
+	font-size: 1.875em;
 }
 h2 {
-	font-size: 1em;
+	font-size: 1.125em;
 }
 h3 {
-	font-size: 1em;
+	font-size: .75em;
 }
 
 p {
-	font-size: 1em;
+	font-size: 0.875em;
 	line-height: 21px;
-    padding: 0 30px;
+}
+
+ul {
+	margin: 0;
 }
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
 	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
+	text-align: center;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -55,17 +57,18 @@ header {
 }
 
 header h1 {
-	float: left;
 	margin: 0;
-	padding: 38px 0;
+	padding: 38px 20px 20px 20px;
+	border-bottom: 3px solid #77a466;
+	width: 100%
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	float: right;
-	padding: 46px 0;
+	padding: 20px 0;
+	width: 100%
 }
 header nav ul {
 	margin: 0;
@@ -74,9 +77,9 @@ header nav ul {
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 1em;
-	padding: 0 10px;
-	display: inline;
+	font-size: .875em;
+	padding: 10px 0;
+	list-style: none;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -86,8 +89,6 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	margin: 0 auto;
-	clear: both;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -95,8 +96,8 @@ header nav ul li a{
 }
 
 .main-image {
-	height: auto;
-	float: left;
+	width: 100%;
+	border-bottom: 3px solid #77a466;
 }
 .main-image img {
 	width: 100%;
@@ -121,13 +122,11 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
-	height: auto;
-	float: left;
+	width: 100%;
 	border-top: 1px solid #eee;
 }
 
-.section-one h3 {
+/*.section-one h3 {
 	padding: 10px 0;
 }
 
@@ -139,7 +138,7 @@ header nav ul li a{
 .section-two h3,
 .section-three h3 {
 	padding: 10px 30px;
-}
+}*/
 
 .menu {
 	list-style: none;
@@ -153,7 +152,7 @@ header nav ul li a{
 .reviews {
 	color: #333;
 	font-size: 1em;
-	line-height: 21px;
+	line-height: 1.3125em;
 }
 
 .address {
@@ -163,11 +162,9 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 footer {
-	height: 50px;
 	border-top: 3px solid #eee;
-	margin: 0 auto;
-	clear: both;
 	text-align: center;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -214,8 +211,9 @@ footer span {
 		width: 30%;
 		padding: 0;
 		border-bottom: none;
-		text-align: none;
+		text-align: left;
 	  }
+	  
 	header nav {
 		width: 40%;
 	}
